@@ -14,6 +14,7 @@ import {
   Maximize2,
   Settings,
 } from "lucide-react";
+import { SiJavascript, SiCss3, SiTypescript } from "react-icons/si";
 type CodeBlockProps = {
   language: string;
   filename: string;
@@ -89,11 +90,16 @@ export const CodeBlock = ({
   const getLanguageIcon = (lang: string) => {
     switch (lang.toLowerCase()) {
       case "javascript":
+        return <SiJavascript size="1em" className="text-yellow-400" />;
       case "jsx":
+        return <SiJavascript size="1em" className="text-yellow-400" />;
       case "typescript":
+        return <SiTypescript size="1em" className="text-blue-400" />;
       case "tsx":
-        return <Code2 size="1em" className="text-yellow-400" />;
+        return <SiTypescript size="1em" className="text-blue-400" />;
       case "bash":
+      case "css":
+        return <SiCss3 size="1em" className="text-blue-400" />;
       case "shell":
         return <Terminal size="1em" className="text-green-400" />;
       default:

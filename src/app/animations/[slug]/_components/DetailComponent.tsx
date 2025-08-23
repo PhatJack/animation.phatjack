@@ -1,6 +1,10 @@
+"use client";
+
 import { CodeBlock } from "@/components/ui/codeblock";
 import { animations } from "@/constants/animation";
 import React from "react";
+import { motion } from "framer-motion";
+import Item from "@/components/Item";
 
 interface DetailComponentProps {
   slug: string;
@@ -10,8 +14,18 @@ const DetailComponent = ({ slug }: DetailComponentProps) => {
   const animation = animations.find((anim) => anim.animationName === slug);
 
   return (
-    <div className="w-full flex flex-col justify-center items-center space-y-10 mt-10">
-      <div className="relative flex items-center justify-center w-full h-6">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      className="w-full flex flex-col justify-center items-center space-y-10 mt-10"
+    >
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
+        className="relative flex items-center justify-center w-full h-6"
+      >
         <svg
           className="text-neutral-400 dark:text-white/20 w-full h-6"
           viewBox="0 0 400 20"
@@ -26,21 +40,55 @@ const DetailComponent = ({ slug }: DetailComponentProps) => {
             strokeLinecap="round"
           ></path>
         </svg>
-      </div>
-      <h1 className="font-bold text-4xl">{animation?.title}</h1>
-      <div className="w-full">
-        {animation?.code && (
+      </motion.div>
+      <motion.h1
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
+        className="font-bold text-4xl"
+      >
+        {animation?.title}
+      </motion.h1>
+
+      {/* Animation Preview */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.5, ease: "easeOut" }}
+        className="w-full max-w-md"
+      >
+        <div className="border rounded-lg p-8 bg-gray-50/50">
+          <div className="flex justify-center items-center h-40">
+            <Item
+              title={animation?.title || "Animation Preview"}
+              animationName={animation?.animationName || ""}
+            />
+          </div>
+          <p className="text-center text-sm text-gray-600 mt-4">
+            Hover to see the animation
+          </p>
+        </div>
+      </motion.div>
+
+      {animation?.code && (
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.7, ease: "easeOut" }}
+          className="w-full"
+        >
           <CodeBlock
             language="css"
             showStats={true}
             filename="src/global.css"
-            code={animation.code}
+            code={`@theme inline { ${animation?.code} 
+}`}
             breadcrumb={["animation.phatjack", "src", "global.css"]}
             theme="light"
           />
-        )}
-      </div>
-    </div>
+        </motion.div>
+      )}
+    </motion.div>
   );
 };
 

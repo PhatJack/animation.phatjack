@@ -2,7 +2,8 @@ export const animations = [
   {
     title: "Fade In",
     animationName: "animate-fade-in",
-    code: `--animate-fade-in: fadeIn var(--duration, 500ms) ease-in both;
+    code: `
+--animate-fade-in: fadeIn var(--duration, 500ms) ease-in both;
 
 @keyframes fadeIn {
 	0% {
@@ -17,7 +18,8 @@ export const animations = [
   {
     title: "Fade Out",
     animationName: "animate-fade-out",
-    code: `--animate-fade-out: fadeOut var(--duration, 500ms) ease-out both;
+    code: `
+--animate-fade-out: fadeOut var(--duration, 500ms) ease-out both;
 
 @keyframes fadeOut {
 	0% {
@@ -32,7 +34,8 @@ export const animations = [
   {
     title: "Slide In Up",
     animationName: "animate-slide-in-up",
-    code: `--animate-slide-in-up: slideInUp var(--duration, 600ms) ease-out both;
+    code: `
+--animate-slide-in-up: slideInUp var(--duration, 600ms) ease-out both;
 
 @keyframes slideInUp {
 	0% {
@@ -49,7 +52,8 @@ export const animations = [
   {
     title: "Slide In Down",
     animationName: "animate-slide-in-down",
-    code: `--animate-slide-in-down: slideInDown var(--duration, 600ms) ease-out both;
+    code: `
+--animate-slide-in-down: slideInDown var(--duration, 600ms) ease-out both;
 
 @keyframes slideInDown {
 	0% {
@@ -66,7 +70,8 @@ export const animations = [
   {
     title: "Slide In Left",
     animationName: "animate-slide-in-left",
-    code: `--animate-slide-in-left: slideInLeft var(--duration, 600ms) ease-out both;
+    code: `
+--animate-slide-in-left: slideInLeft var(--duration, 600ms) ease-out both;
 
 @keyframes slideInLeft {
 	0% {
@@ -83,7 +88,8 @@ export const animations = [
   {
     title: "Slide In Right",
     animationName: "animate-slide-in-right",
-    code: `--animate-slide-in-right: slideInRight var(--duration, 600ms) ease-out both;
+    code: `
+--animate-slide-in-right: slideInRight var(--duration, 600ms) ease-out both;
 
 @keyframes slideInRight {
 	0% {
@@ -100,7 +106,8 @@ export const animations = [
   {
     title: "Scale In",
     animationName: "animate-scale-in",
-    code: `--animate-scale-in: scaleIn var(--duration, 400ms) ease-out both;
+    code: `
+--animate-scale-in: scaleIn var(--duration, 400ms) ease-out both;
 
 @keyframes scaleIn {
 	0% {
@@ -117,7 +124,8 @@ export const animations = [
   {
     title: "Scale Out",
     animationName: "animate-scale-out",
-    code: `--animate-scale-out: scaleOut var(--duration, 400ms) ease-in both;
+    code: `
+--animate-scale-out: scaleOut var(--duration, 400ms) ease-in both;
 
 @keyframes scaleOut {
 	0% {
@@ -134,7 +142,8 @@ export const animations = [
   {
     title: "Bounce In",
     animationName: "animate-bounce-in",
-    code: `--animate-bounce-in: bounceIn var(--duration, 800ms) ease-out both;
+    code: `
+--animate-bounce-in: bounceIn var(--duration, 800ms) ease-out both;
 
 @keyframes bounceIn {
 	0% {
@@ -160,7 +169,8 @@ export const animations = [
   {
     title: "Rotate In",
     animationName: "animate-rotate-in",
-    code: `--animate-rotate-in: rotateIn var(--duration, 600ms) ease-out both;
+    code: `
+--animate-rotate-in: rotateIn var(--duration, 600ms) ease-out both;
 
 @keyframes rotateIn {
 	0% {
@@ -177,7 +187,8 @@ export const animations = [
   {
     title: "Flip In X",
     animationName: "animate-flip-in-x",
-    code: `--animate-flip-in-x: flipInX var(--duration, 600ms) ease-out both;
+    code: `
+--animate-flip-in-x: flipInX var(--duration, 600ms) ease-out both;
 
 @keyframes flipInX {
 	0% {
@@ -202,7 +213,8 @@ export const animations = [
   {
     title: "Flip In Y",
     animationName: "animate-flip-in-y",
-    code: `--animate-flip-in-y: flipInY var(--duration, 600ms) ease-out both;
+    code: `
+--animate-flip-in-y: flipInY var(--duration, 600ms) ease-out both;
 
 @keyframes flipInY {
 	0% {
@@ -227,7 +239,8 @@ export const animations = [
   {
     title: "Zoom In",
     animationName: "animate-zoom-in",
-    code: `--animate-zoom-in: zoomIn var(--duration, 400ms) ease-out both;
+    code: `
+--animate-zoom-in: zoomIn var(--duration, 400ms) ease-out both;
 
 @keyframes zoomIn {
 	0% {
@@ -244,7 +257,8 @@ export const animations = [
   {
     title: "Zoom Out",
     animationName: "animate-zoom-out",
-    code: `--animate-zoom-out: zoomOut var(--duration, 400ms) ease-in both;
+    code: `
+--animate-zoom-out: zoomOut var(--duration, 400ms) ease-in both;
 
 @keyframes zoomOut {
 	0% {
@@ -261,7 +275,8 @@ export const animations = [
   {
     title: "Pulse",
     animationName: "animate-pulse",
-    code: `--animate-pulse: pulse var(--duration, 2000ms) ease-in-out infinite;
+    code: `
+--animate-pulse: pulse var(--duration, 2000ms) ease-in-out infinite;
 
 @keyframes pulse {
 	0%, 100% {
@@ -276,7 +291,8 @@ export const animations = [
   {
     title: "Heartbeat",
     animationName: "animate-heartbeat",
-    code: `--animate-heartbeat: heartbeat var(--duration, 1000ms) ease-in-out infinite;
+    code: `
+--animate-heartbeat: heartbeat var(--duration, 1000ms) ease-in-out infinite;
 
 @keyframes heartbeat {
 	0% {
@@ -303,7 +319,8 @@ export const animations = [
   {
     title: "Shake",
     animationName: "animate-shake",
-    code: `--animate-shake: shake var(--duration, 800ms) ease-in-out both;
+    code: `
+--animate-shake: shake var(--duration, 800ms) ease-in-out both;
 
 @keyframes shake {
 	0%, 100% {
@@ -322,7 +339,8 @@ export const animations = [
   {
     title: "Wobble",
     animationName: "animate-wobble",
-    code: `--animate-wobble: wobble var(--duration, 1000ms) ease-in-out both;
+    code: `
+--animate-wobble: wobble var(--duration, 1000ms) ease-in-out both;
 
 @keyframes wobble {
 	0% {
@@ -357,7 +375,8 @@ export const animations = [
   {
     title: "Rubber Band",
     animationName: "animate-rubber-band",
-    code: `--animate-rubber-band: rubberBand var(--duration, 1000ms) ease-out both;
+    code: `
+--animate-rubber-band: rubberBand var(--duration, 1000ms) ease-out both;
 
 @keyframes rubberBand {
 	0% {
@@ -392,7 +411,8 @@ export const animations = [
   {
     title: "Jello",
     animationName: "animate-jello",
-    code: `--animate-jello: jello var(--duration, 1000ms) ease-out both;
+    code: `
+--animate-jello: jello var(--duration, 1000ms) ease-out both;
 
 @keyframes jello {
 	0%, 11.1%, 100% {
@@ -431,7 +451,8 @@ export const animations = [
   {
     title: "Swing",
     animationName: "animate-swing",
-    code: `--animate-swing: swing var(--duration, 1000ms) ease-in-out both;
+    code: `
+--animate-swing: swing var(--duration, 1000ms) ease-in-out both;
 
 @keyframes swing {
 	20% {
@@ -458,7 +479,8 @@ export const animations = [
   {
     title: "Tada",
     animationName: "animate-tada",
-    code: `--animate-tada: tada var(--duration, 1000ms) ease-in-out both;
+    code: `
+--animate-tada: tada var(--duration, 1000ms) ease-in-out both;
 
 @keyframes tada {
 	0% {
@@ -485,7 +507,8 @@ export const animations = [
   {
     title: "Flash",
     animationName: "animate-flash",
-    code: `--animate-flash: flash var(--duration, 1000ms) ease-in-out both;
+    code: `
+--animate-flash: flash var(--duration, 1000ms) ease-in-out both;
 
 @keyframes flash {
 	0%, 50%, 100% {
@@ -500,7 +523,8 @@ export const animations = [
   {
     title: "Light Speed In Right",
     animationName: "animate-light-speed-in-right",
-    code: `--animate-light-speed-in-right: lightSpeedInRight var(--duration, 1000ms) ease-out both;
+    code: `
+--animate-light-speed-in-right: lightSpeedInRight var(--duration, 1000ms) ease-out both;
 
 @keyframes lightSpeedInRight {
 	0% {
@@ -526,7 +550,8 @@ export const animations = [
   {
     title: "Light Speed In Left",
     animationName: "animate-light-speed-in-left",
-    code: `--animate-light-speed-in-left: lightSpeedInLeft var(--duration, 1000ms) ease-out both;
+    code: `
+--animate-light-speed-in-left: lightSpeedInLeft var(--duration, 1000ms) ease-out both;
 
 @keyframes lightSpeedInLeft {
 	0% {
@@ -552,7 +577,8 @@ export const animations = [
   {
     title: "Roll In",
     animationName: "animate-roll-in",
-    code: `--animate-roll-in: rollIn var(--duration, 1000ms) ease-out both;
+    code: `
+--animate-roll-in: rollIn var(--duration, 1000ms) ease-out both;
 
 @keyframes rollIn {
 	0% {
@@ -569,7 +595,8 @@ export const animations = [
   {
     title: "Jack In The Box",
     animationName: "animate-jack-in-the-box",
-    code: `--animate-jack-in-the-box: jackInTheBox var(--duration, 1000ms) ease-in-out both;
+    code: `
+--animate-jack-in-the-box: jackInTheBox var(--duration, 1000ms) ease-in-out both;
 
 @keyframes jackInTheBox {
 	0% {
@@ -595,7 +622,8 @@ export const animations = [
   {
     title: "Hinge",
     animationName: "animate-hinge",
-    code: `--animate-hinge: hinge var(--duration, 2000ms) ease-in-out both;
+    code: `
+--animate-hinge: hinge var(--duration, 2000ms) ease-in-out both;
 
 @keyframes hinge {
 	0% {
@@ -625,7 +653,8 @@ export const animations = [
   {
     title: "Back In Up",
     animationName: "animate-back-in-up",
-    code: `--animate-back-in-up: backInUp var(--duration, 1000ms) ease-out both;
+    code: `
+--animate-back-in-up: backInUp var(--duration, 1000ms) ease-out both;
 
 @keyframes backInUp {
 	0% {
@@ -647,7 +676,8 @@ export const animations = [
   {
     title: "Back In Down",
     animationName: "animate-back-in-down",
-    code: `--animate-back-in-down: backInDown var(--duration, 1000ms) ease-out both;
+    code: `
+--animate-back-in-down: backInDown var(--duration, 1000ms) ease-out both;
 
 @keyframes backInDown {
 	0% {
@@ -669,7 +699,8 @@ export const animations = [
   {
     title: "Back In Left",
     animationName: "animate-back-in-left",
-    code: `--animate-back-in-left: backInLeft var(--duration, 1000ms) ease-out both;
+    code: `
+--animate-back-in-left: backInLeft var(--duration, 1000ms) ease-out both;
 
 @keyframes backInLeft {
 	0% {
@@ -691,7 +722,8 @@ export const animations = [
   {
     title: "Back In Right",
     animationName: "animate-back-in-right",
-    code: `--animate-back-in-right: backInRight var(--duration, 1000ms) ease-out both;
+    code: `
+--animate-back-in-right: backInRight var(--duration, 1000ms) ease-out both;
 
 @keyframes backInRight {
 	0% {
@@ -713,7 +745,8 @@ export const animations = [
   {
     title: "Rotate In Down Left",
     animationName: "animate-rotate-in-down-left",
-    code: `--animate-rotate-in-down-left: rotateInDownLeft var(--duration, 1000ms) ease-out both;
+    code: `
+--animate-rotate-in-down-left: rotateInDownLeft var(--duration, 1000ms) ease-out both;
 
 @keyframes rotateInDownLeft {
 	0% {
@@ -732,7 +765,8 @@ export const animations = [
   {
     title: "Rotate In Down Right",
     animationName: "animate-rotate-in-down-right",
-    code: `--animate-rotate-in-down-right: rotateInDownRight var(--duration, 1000ms) ease-out both;
+    code: `
+--animate-rotate-in-down-right: rotateInDownRight var(--duration, 1000ms) ease-out both;
 
 @keyframes rotateInDownRight {
 	0% {
@@ -751,7 +785,8 @@ export const animations = [
   {
     title: "Rotate In Up Left",
     animationName: "animate-rotate-in-up-left",
-    code: `--animate-rotate-in-up-left: rotateInUpLeft var(--duration, 1000ms) ease-out both;
+    code: `
+--animate-rotate-in-up-left: rotateInUpLeft var(--duration, 1000ms) ease-out both;
 
 @keyframes rotateInUpLeft {
 	0% {
@@ -770,7 +805,8 @@ export const animations = [
   {
     title: "Rotate In Up Right",
     animationName: "animate-rotate-in-up-right",
-    code: `--animate-rotate-in-up-right: rotateInUpRight var(--duration, 1000ms) ease-out both;
+    code: `
+--animate-rotate-in-up-right: rotateInUpRight var(--duration, 1000ms) ease-out both;
 
 @keyframes rotateInUpRight {
 	0% {
@@ -789,7 +825,8 @@ export const animations = [
   {
     title: "Slide Out Up",
     animationName: "animate-slide-out-up",
-    code: `--animate-slide-out-up: slideOutUp var(--duration, 1000ms) ease-in both;
+    code: `
+--animate-slide-out-up: slideOutUp var(--duration, 1000ms) ease-in both;
 
 @keyframes slideOutUp {
 	0% {
@@ -805,7 +842,8 @@ export const animations = [
   {
     title: "Slide Out Down",
     animationName: "animate-slide-out-down",
-    code: `--animate-slide-out-down: slideOutDown var(--duration, 1000ms) ease-in both;
+    code: `
+--animate-slide-out-down: slideOutDown var(--duration, 1000ms) ease-in both;
 
 @keyframes slideOutDown {
 	0% {

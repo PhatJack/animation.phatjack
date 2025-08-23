@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { BackgroundRippleEffect } from "./acternity-ui/background-ripple-effect";
 import { GitHubStarsButton } from "./animate-ui/github-star";
 import { SparklesText } from "./magic-ui/sparkles-text";

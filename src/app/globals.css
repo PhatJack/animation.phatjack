@@ -856,7 +856,7 @@
 
 @utility container {
 
-	@apply mx-auto;
+	@apply mx-auto px-4;
 
 	@media (width >=96rem) {
 		max-width: 90rem;

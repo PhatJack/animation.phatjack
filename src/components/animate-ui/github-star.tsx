@@ -11,7 +11,7 @@ import {
   type HTMLMotionProps,
   type SpringOptions,
   type UseInViewOptions,
-} from "motion/react";
+} from "framer-motion";
 
 import { cn } from "@/lib/utils";
 import { SlidingNumber } from "@/components/animate-ui/sliding-number";
