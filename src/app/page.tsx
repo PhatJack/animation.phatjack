@@ -1,9 +1,11 @@
+import AnimationGallery from "@/components/AnimationGallery";
 import Banner from "@/components/Banner";
 
 export default function Home() {
   return (
-    <main className="container flex flex-col space-y-10">
+    <div className="flex flex-col">
       <Banner />
-    </main>
+      <AnimationGallery />
+    </div>
   );
 }

@@ -3,6 +3,7 @@
 import { motion } from "motion/react";
 import { BackgroundRippleEffect } from "./acternity-ui/background-ripple-effect";
 import { GitHubStarsButton } from "./animate-ui/github-star";
+import { SparklesText } from "./magic-ui/sparkles-text";
 
 export default function Banner() {
   return (
@@ -13,21 +14,21 @@ export default function Banner() {
       </div>
 
       {/* Banner Content */}
-      <motion.div 
+      <motion.div
         initial={{ y: 30, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="relative z-10 text-center text-black px-4 flex flex-col items-center"
       >
-        <motion.h1 
+        <motion.h1
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
           className="text-4xl md:text-5xl font-bold mb-4"
         >
-          Tailwind CSS Animation Gallery
+          Tailwind CSS <SparklesText className="inline text-4xl md:text-5xl text-[#3b82f6]">Animation</SparklesText> Gallery
         </motion.h1>
-        <motion.p 
+        <motion.p
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}

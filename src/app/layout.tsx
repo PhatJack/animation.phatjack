@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/shared/Header";
 import { StarsBackground } from "@/components/animate-ui/stars-background";
+import NextTopLoader from "nextjs-toploader";
+import { Badge } from "@/components/ui/badge";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,9 +31,17 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased relative min-h-screen`}
       >
+        <NextTopLoader />
         {/* <StarsBackground className="absolute inset-0" /> */}
         <Header />
-        {children}
+        <main className="container">{children}</main>
+        <footer className="py-10">
+          <div className="container flex justify-center items-center">
+            <Badge variant="default" shiny >
+              Made with ❤️ by PhatJack
+            </Badge>
+          </div>
+        </footer>
       </body>
     </html>
   );
