@@ -9,7 +9,6 @@ import {
   File,
   Folder,
   Terminal,
-  Code2,
   Download,
   Maximize2,
   Settings,

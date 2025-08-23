@@ -1,11 +1,7 @@
-import AnimationGallery from "@/components/AnimationGallery";
-import Banner from "@/components/Banner";
+import HomePage from "./_components/HomePage";
 
 export default function Home() {
   return (
-    <div className="flex flex-col">
-      <Banner />
-      <AnimationGallery />
-    </div>
+    <HomePage />
   );
 }
