@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://animation.phatjack.vercel.app"),
+  metadataBase: new URL("https://animation-phatjack.vercel.app"),
   title: "animation.phatjack",
   description:
     "A comprehensive Tailwind CSS animation gallery showcasing 50+ ready-to-use animations with live previews, code snippets, and easy integration.",
