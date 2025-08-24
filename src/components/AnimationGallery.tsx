@@ -47,6 +47,7 @@ const AnimationGallery = () => {
             <Item
               title={animation.title}
               animationName={animation.animationName}
+              isDisabled={false}
             />
           </motion.div>
         ))}

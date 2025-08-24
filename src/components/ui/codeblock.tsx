@@ -11,6 +11,7 @@ import {
   Terminal,
   Download,
   Maximize2,
+  Minimize2,
   Settings,
 } from "lucide-react";
 import { SiJavascript, SiCss3, SiTypescript } from "react-icons/si";
@@ -187,12 +188,21 @@ export const CodeBlock = ({
               } transition-colors`}
               title="Toggle fullscreen"
             >
-              <Maximize2
-                size="1em"
-                className={
-                  theme === "dark" ? "text-slate-400" : "text-gray-500"
-                }
-              />
+              {isExpanded ? (
+                <Minimize2
+                  size="1em"
+                  className={
+                    theme === "dark" ? "text-slate-400" : "text-gray-500"
+                  }
+                />
+              ) : (
+                <Maximize2
+                  size="1em"
+                  className={
+                    theme === "dark" ? "text-slate-400" : "text-gray-500"
+                  }
+                />
+              )}
             </button>
             <button
               onClick={downloadCode}

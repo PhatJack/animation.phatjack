@@ -32,19 +32,22 @@ const DetailComponent = ({ slug }: DetailComponentProps) => {
           preserveAspectRatio="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <path
+          <motion.path
             d="M0,10 Q25,0 50,10 T100,10 T150,10 T200,10 T250,10 T300,10 T350,10 T400,10"
             fill="none"
             stroke="currentColor"
             strokeWidth="2"
             strokeLinecap="round"
-          ></path>
+            initial={{ pathLength: 0 }}
+            animate={{ pathLength: 1 }}
+            transition={{ duration: 2, ease: "easeInOut" }}
+          ></motion.path>
         </svg>
       </motion.div>
       <motion.h1
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
+        transition={{ duration: 0.5, delay: 0.5, ease: "easeOut" }}
         className="font-bold text-4xl"
       >
         {animation?.title}
@@ -54,7 +57,7 @@ const DetailComponent = ({ slug }: DetailComponentProps) => {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.5, ease: "easeOut" }}
+        transition={{ duration: 0.5, delay: 0.8, ease: "easeOut" }}
         className="w-full max-w-md"
       >
         <div className="border rounded-lg p-8 bg-gray-50/50">
@@ -74,7 +77,7 @@ const DetailComponent = ({ slug }: DetailComponentProps) => {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.7, ease: "easeOut" }}
+          transition={{ duration: 0.6, delay: 0.8, ease: "easeOut" }}
           className="w-full"
         >
           <CodeBlock

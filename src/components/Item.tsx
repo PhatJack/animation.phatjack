@@ -1,4 +1,5 @@
 "use client";
+import { cn } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
 import { useRouter } from "nextjs-toploader/app";
 import React, { useState } from "react";
@@ -6,16 +7,19 @@ import React, { useState } from "react";
 interface ItemProps {
   title: string;
   animationName: string; // e.g. "fade-in", "zoom-in"
+  isDisabled?: boolean;
 }
 
-const Item = ({ title, animationName }: ItemProps) => {
+const Item = ({ title, animationName, isDisabled }: ItemProps) => {
   const router = useRouter();
   const [isHovered, setIsHovered] = useState(false);
 
   return (
     <div
-      onClick={() => router.push(`/animations/${animationName}`)}
-      className="p-4 size-full flex flex-col gap-4 cursor-pointer transition"
+      onClick={() => !isDisabled && router.push(`/animations/${animationName}`)}
+      className={cn(
+        "p-4 size-full flex flex-col gap-4 cursor-pointer transition",
+      )}
       onMouseEnter={() => {
         setIsHovered(false); // reset first
         requestAnimationFrame(() => setIsHovered(true)); // retrigger
