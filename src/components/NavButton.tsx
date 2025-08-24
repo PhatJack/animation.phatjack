@@ -21,7 +21,7 @@ const NavButton = ({ title, direction, onClick }: NavButtonProps) => {
       whileTap={{ scale: 0.95 }}
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
       className={cn(
-        "rounded-2xl border p-6 flex items-center gap-4 bg-white dark:bg-neutral-900 group"
+        "rounded-2xl border p-6 flex items-center gap-4 bg-white dark:bg-neutral-900 group cursor-pointer"
       )}
     >
       {isPrev && (

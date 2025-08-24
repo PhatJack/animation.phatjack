@@ -5,7 +5,6 @@ import { animations } from "@/constants/animation";
 import React from "react";
 import { motion } from "framer-motion";
 import Item from "@/components/Item";
-import { ArrowLeft, ArrowRight } from "lucide-react";
 import NavButton from "@/components/NavButton";
 import { useRouter } from "nextjs-toploader/app";
 
@@ -99,20 +98,24 @@ const DetailComponent = ({ slug }: DetailComponentProps) => {
         </motion.div>
       )}
       <div className="w-full flex justify-between items-center">
-        {prev && (
-          <NavButton
-            title={prev.title}
-            direction="prev"
-            onClick={() => router.push(`/animations/${prev.animationName}`)}
-          />
-        )}
-        {next && (
-          <NavButton
-            title={next.title}
-            direction="next"
-            onClick={() => router.push(`/animations/${next.animationName}`)}
-          />
-        )}
+        <div className="">
+          {prev && (
+            <NavButton
+              title={prev.title}
+              direction="prev"
+              onClick={() => router.push(`/animations/${prev.animationName}`)}
+            />
+          )}
+        </div>
+        <div className="">
+          {next && (
+            <NavButton
+              title={next.title}
+              direction="next"
+              onClick={() => router.push(`/animations/${next.animationName}`)}
+            />
+          )}
+        </div>
       </div>
     </motion.div>
   );
