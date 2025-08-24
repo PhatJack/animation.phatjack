@@ -28,6 +28,7 @@ export const metadata: Metadata = {
       url: "/meta-image.png",
       alt: "Animation.phatjack",
     },
+    siteName: "animation.phatjack",
   },
   manifest: "/favicon/site.webmanifest",
   twitter: {
@@ -39,6 +40,8 @@ export const metadata: Metadata = {
       url: "/meta-image.png",
       alt: "Animation.phatjack",
     },
+    site: "@PhatJack",
+    creator: "@jackphat693",
   },
 };
 

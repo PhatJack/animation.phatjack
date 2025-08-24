@@ -5,14 +5,21 @@ import { animations } from "@/constants/animation";
 import React from "react";
 import { motion } from "framer-motion";
 import Item from "@/components/Item";
+import { ArrowLeft, ArrowRight } from "lucide-react";
+import NavButton from "@/components/NavButton";
+import { useRouter } from "nextjs-toploader/app";
 
 interface DetailComponentProps {
   slug: string;
 }
 
 const DetailComponent = ({ slug }: DetailComponentProps) => {
+  const router = useRouter();
   const animation = animations.find((anim) => anim.animationName === slug);
+  const index = animations.findIndex((anim) => anim.animationName === slug);
 
+  const prev = index > 0 ? animations[index - 1] : null;
+  const next = index < animations.length - 1 ? animations[index + 1] : null;
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -91,6 +98,22 @@ const DetailComponent = ({ slug }: DetailComponentProps) => {
           />
         </motion.div>
       )}
+      <div className="w-full flex justify-between items-center">
+        {prev && (
+          <NavButton
+            title={prev.title}
+            direction="prev"
+            onClick={() => router.push(`/animations/${prev.animationName}`)}
+          />
+        )}
+        {next && (
+          <NavButton
+            title={next.title}
+            direction="next"
+            onClick={() => router.push(`/animations/${next.animationName}`)}
+          />
+        )}
+      </div>
     </motion.div>
   );
 };
