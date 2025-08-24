@@ -33,7 +33,7 @@ const AnimationGallery = () => {
   return (
     <div className="">
       <motion.div
-        className="grid grid-cols-5 border-l border-y divide-x divide-y"
+        className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 border-l border-t divide-x divide-y"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
