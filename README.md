@@ -118,24 +118,6 @@ We welcome contributions from the community! Here's how you can help:
 - **Testing**: Test on multiple devices and browsers
 - **Naming**: Use descriptive, consistent naming conventions
 
-## 📱 Browser Support
-
-- **Modern Browsers**: Chrome 90+, Firefox 88+, Safari 14+, Edge 90+
-- **Mobile**: iOS Safari 14+, Chrome Mobile 90+
-- **Features**: CSS animations, CSS custom properties, modern JavaScript
-
-## 🚀 Deployment
-
-### Vercel (Recommended)
-1. **Connect your repository** to [Vercel](https://vercel.com)
-2. **Automatic deployment** on every push to main branch
-3. **Preview deployments** for pull requests
-
-### Other Platforms
-- **Netlify**: Connect your Git repository and deploy
-- **Railway**: Simple deployment with automatic builds
-- **Self-hosted**: Build and deploy to your own server
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
