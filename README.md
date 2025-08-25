@@ -81,13 +81,6 @@ We welcome contributions from the community! Here's how you can help:
 6. **Push to your fork**: `git push origin feature/amazing-animation`
 7. **Open a Pull Request**: Provide clear description of your changes
 
-### Guidelines for New Animations
-- **Performance**: Keep animations lightweight and smooth
-- **Accessibility**: Ensure animations respect `prefers-reduced-motion`
-- **Documentation**: Include clear usage examples and CSS code
-- **Testing**: Test on multiple devices and browsers
-- **Naming**: Use descriptive, consistent naming conventions
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
