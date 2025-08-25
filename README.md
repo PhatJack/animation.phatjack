@@ -61,36 +61,6 @@ A comprehensive Tailwind CSS animation gallery showcasing 50+ ready-to-use anima
 </div>
 ```
 
-## 🛠️ Tech Stack
-
-- **Framework**: [Next.js 15](https://nextjs.org/) with App Router
-- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/) with custom animations
-- **Animations**: [Framer Motion](https://www.framer.com/motion/) for micro-interactions
-- **Language**: [TypeScript](https://www.typescriptlang.org/) for type safety
-- **UI Components**: Custom components with Radix UI primitives
-- **Development**: ESLint, Turbopack for fast builds
-- **Icons**: [Lucide React](https://lucide.dev/) and [React Icons](https://react-icons.github.io/react-icons/)
-
-## 🏗️ Project Structure
-
-```
-animation.phatjack/
-├── src/
-│   ├── app/                    # Next.js App Router
-│   │   ├── _components/       # Page-specific components
-│   │   ├── animations/        # Animation detail pages
-│   │   └── layout.tsx         # Root layout
-│   ├── components/            # Reusable UI components
-│   │   ├── ui/               # Base UI components
-│   │   ├── animate-ui/       # Animation-specific components
-│   │   ├── magic-ui/         # Special effect components
-│   │   └── acternity-ui/     # Background effects
-│   ├── constants/            # Animation definitions
-│   └── lib/                  # Utility functions
-├── public/                   # Static assets
-└── package.json             # Dependencies and scripts
-```
-
 ## 🤝 Contributing
 
 We welcome contributions from the community! Here's how you can help:
