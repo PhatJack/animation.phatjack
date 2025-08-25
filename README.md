@@ -140,21 +140,6 @@ We welcome contributions from the community! Here's how you can help:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
-
-- **Tailwind CSS Team** for the amazing utility-first CSS framework
-- **Vercel** for Next.js and the deployment platform
-- **Framer** for the powerful animation library
-- **Community Contributors** who help make this project better
-
-## 📞 Support & Community
-
-- **GitHub Issues**: [Report bugs or request features](https://github.com/PhatJack/animation.phatjack/issues)
-- **Discussions**: [Join community conversations](https://github.com/PhatJack/animation.phatjack/discussions)
-- **Contributing**: [Learn how to contribute](https://github.com/PhatJack/animation.phatjack/blob/main/CONTRIBUTING.md)
-
----
-
 **Made with ❤️ by [PhatJack](https://github.com/PhatJack)**
 
 If you find this project helpful, please consider giving it a ⭐ star on GitHub!
