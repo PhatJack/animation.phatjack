@@ -26,11 +26,6 @@ A comprehensive Tailwind CSS animation gallery showcasing 50+ ready-to-use anima
 - **Advanced Effects**: Flip, hinge, light speed, roll, jack in the box
 - **Directional Animations**: Slide in/out from all directions, rotate from corners
 
-### Technical Features
-- **Tailwind CSS 4 Integration**: Uses modern CSS custom properties and `@theme` directive
-- **Framer Motion**: Smooth page transitions and micro-interactions
-- **TypeScript**: Full type safety and better development experience
-- **Component Architecture**: Modular, reusable components for easy customization
 ## 📖 How to Use
 
 ### Browsing Animations
